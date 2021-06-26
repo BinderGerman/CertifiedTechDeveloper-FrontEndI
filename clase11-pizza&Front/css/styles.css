@@ -3,11 +3,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
+}   
 
 body {
     background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -32,7 +32,7 @@ header {
     height: 80px;
 }
 
-h1 {
+h1, h4 {
     color: #ffffff;
     font-family: Roboto;
     font-style: normal;
