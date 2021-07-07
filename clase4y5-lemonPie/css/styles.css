@@ -12,13 +12,13 @@ nav ul {
     list-style: none;
 }
 
-nav ul li a {
+/* nav ul li a {
     text-decoration: none;
     margin-right: 10px;
     font-size: 20px;
     line-height: 28px;
     color: #ff0000;
-}
+} */
 
 main div {
     width: 100%;

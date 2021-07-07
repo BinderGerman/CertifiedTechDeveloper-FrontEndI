@@ -28,7 +28,7 @@ header h1 {
 main {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    flex-wrap: wrap;
     margin: 100px 0;
 }
 
@@ -38,6 +38,7 @@ main {
     background: #F3F3F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    margin-top: 50px;
 }
 
 .card img {
@@ -47,7 +48,10 @@ main {
 
 .fa-mask,
 .fa-pizza-slice,
-.fa-figma {
+.fa-figma,
+.fa-birthday-cake,
+.fa-paw,
+.fa-user-tie {
     position: absolute;
     top: 170px;
     right: 105px;
@@ -63,7 +67,10 @@ main {
 
 .fa-mask:hover,
 .fa-pizza-slice:hover,
-.fa-figma:hover {
+.fa-figma:hover,
+.fa-birthday-cake:hover,
+.fa-paw:hover,
+.fa-user-tie:hover {
     background: red;
     color: #786960;
 }

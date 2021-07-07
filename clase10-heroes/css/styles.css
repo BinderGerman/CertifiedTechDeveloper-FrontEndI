@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,13 +15,13 @@ body {
 
 .descuentos {
     width: 100%;
-    height: 38px;
+    height: 30px;
     background: #1CD1B0;
 }
 
 .descuentos p {
     font-size: 15px;
-    line-height: 38px;
+    line-height: 30px;
     color: #000000;
     margin-left: 20px;
 }
@@ -29,16 +33,51 @@ header {
     width: 100%;
     height: 70px;
     background: #00669F;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header div {
+    display: flex;
+    margin-left: 10px;
+}
+
+header img {
+    height: 70px;
 }
 
 header h1 {
-    width: 128px;
     height: 47px;
-    font-size: 35px;
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
     line-height: 70px;
-    color: #000000;
-    margin-left: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+header nav {
+    width: 100%;
+    height: 40px;
+    background: #001D2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 main {
@@ -139,6 +178,65 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Css para secciones login, contacto y registro */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: start;
+    margin-bottom: 30px;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 72px;
+    color: #333333;
+}
+
+form input {
+    width: 450px;
+    height: 35px;
+    margin: 12px 0;
+    background: #FFFFFF;
+    border: 1.5px solid #000000;
+}
+
+[type="button"] {
+    background: #1CD1B0;
+    border-radius: 23px;
+    margin-top: 30px;
+}
+
+[type="button"]:hover {
+    background: #00669F;
+}
+
+[value="Entrar"] {
+    font-family: Karla;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+[value="Entrar"]:hover {
+    color: #F3F3F3;
+}
+
+.hcr-cta {
+    text-align: center;
+    font-family: Karla, sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.hcr-cta a {
+    text-decoration: none;
+    color: color: #00669F;
 }
 
 

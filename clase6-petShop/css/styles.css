@@ -127,7 +127,7 @@ h2 {
     text-align: center;
 }
 
-.fa-paw {
+.productos .fa-paw {
     margin-top: 80px;
     font-size: 75px;
     color: #F0A83E;
@@ -158,6 +158,7 @@ h3 {
 .foto-producto {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 50px;
     gap: 50px;
     
@@ -236,6 +237,7 @@ h4 {
 .newsletter {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     height: 60px;
@@ -350,6 +352,37 @@ h5 .fa-cat, h5 .fa-dog {
     line-height: 20px;
     color: #F3F3F3;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+    }
+
+    .banner div {
+        text-align: right;
+    }
+
+    .banner div p {
+        color: #F3F3F3;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        height: 100px;
+        padding: 10px 0;
+    }
+
+    .info {
+        height: 320px;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .info h5 {
+        padding-top: 20px;
+    }
 }
 
 
