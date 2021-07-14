@@ -7,7 +7,7 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');</style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Heroes</title>
+    <title>Heroes - Registro</title>
 </head>
 <body>
     <div class="descuentos">
@@ -15,9 +15,16 @@
     </div>
     <header>
         <div>
-            <img src="img/logo-heroes.png" alt="">
+            <a href="index.html"><img src="img/logo-heroes.png" alt=""></a>
             <h1>Nombre Tienda</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registrarme</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="formulario">
@@ -33,9 +40,17 @@
                     <input type="password" name="contraseña" placeholder="************">
                 </p>
                 <p>
-                <input type="button" value="Entrar">
+                    <select name="nacionalidad" id="">
+                        <option value="argentina">Argentina</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="brasil">Brasil</option>
+                    </select>
                 </p>
-                <p class="hcr-cta">¿ya tenes cuenta? <a href="">Ingresar</a></p>
+                <p class="btn">
+                <input type="reset" value="Resetear">    
+                <input type="submit" value="Entrar">
+                </p>
+                <p class="hcr-cta">¿ya tenes cuenta? <a href="login.html">Ingresar</a></p>
             </form>
         </section>      
     </main>

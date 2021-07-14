@@ -15,9 +15,16 @@
     </div>
     <header>
         <div>
-            <img src="img/logo-heroes.png" alt="">
+            <a href="index.html"><img src="img/logo-heroes.png" alt=""></a>
             <h1>Nombre Tienda</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registrarme</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="formulario">
@@ -27,13 +34,14 @@
                     <input type="text" name="nombre" placeholder="Nombre y apellido">
                 </p>
                 <p>
-                    <input type="email" name="email" placeholder="correo electrónico">
+                    <input type="email" name="email" placeholder="Correo electrónico">
                 </p>
                 <p>
-                    <Textarea></Textarea>
+                    <Textarea placeholder="Dejanos tu comentario aquí"></Textarea>
                 </p>
-                <p>
-                    <input type="button" value="Entrar">
+                <p class="btn">
+                    <input type="reset" value="Resetear">    
+                    <input type="submit" value="Entrar">
                 </p>
             </form>
         </section>      

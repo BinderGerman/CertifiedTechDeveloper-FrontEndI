@@ -41,6 +41,10 @@ header div {
     margin-left: 10px;
 }
 
+header div a {
+    height: 70px;
+}
+
 header img {
     height: 70px;
 }
@@ -83,8 +87,10 @@ header nav ul a {
 main {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     margin: 100px 0;
+    position: relative;
 }
 
 .card {  
@@ -148,6 +154,21 @@ main {
     color: #F3F3F3;
 }
 
+button {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    border-radius: 50%;
+    color: #F3F3F3;
+    background: #00669F;
+    font-family: Roboto;
+    font-size: 35px;
+    line-height: 60px;
+    border: none;
+}
+
 footer {
     width: 100%;
     height: 51px;
@@ -164,20 +185,6 @@ footer p {
     line-height: 51px;
     text-align: center;
     color: #FFF9F9;
-}
-
-@media  (max-width: 768px) {
-    main {
-       flex-wrap: wrap;
-
-    }
-}
-
-@media (max-width: 480px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 /* Css para secciones login, contacto y registro */
@@ -197,7 +204,7 @@ h3 {
     color: #333333;
 }
 
-form input {
+form input, textarea, select {
     width: 450px;
     height: 35px;
     margin: 12px 0;
@@ -205,25 +212,51 @@ form input {
     border: 1.5px solid #000000;
 }
 
-[type="button"] {
+form textarea {
+    height: 250px;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #999;
+    padding-left: 10px;
+}
+
+textarea:focus::placeholder,
+input:focus::placeholder{
+    color: transparent; 
+}
+
+input:focus {
+    padding-left: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    width: 200px;
     background: #1CD1B0;
     border-radius: 23px;
     margin-top: 30px;
-}
-
-[type="button"]:hover {
-    background: #00669F;
-}
-
-[value="Entrar"] {
     font-family: Karla;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     color: #000000;
+    border: none;
 }
 
-[value="Entrar"]:hover {
+input[type="reset"] {
+    background: #888888;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background: #00669F;
     color: #F3F3F3;
 }
 
@@ -236,7 +269,28 @@ form input {
 
 .hcr-cta a {
     text-decoration: none;
-    color: color: #00669F;
+    color: #00669F;
 }
 
+/* Media Queries */
+
+@media  (max-width: 768px) {
+    
+ 
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    form input, textarea, select {
+        width: 350px;
+    }
+
+    input[type="reset"], input[type="submit"] {
+        width: 150px;
+    }
+}
 
