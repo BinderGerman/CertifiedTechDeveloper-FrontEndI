@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ece4e4;
+}
+
+header {
+  background-image: url("../img/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+header .hero {
+  margin-top: 15%;
+  text-align: center;
+}
+header .hero h2 {
+  color: #ece4e4;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+header .hero h2 span {
+  color: #D01418;
+}
+header .hero button {
+  width: 220px;
+  height: 61px;
+  background-color: #D01418;
+  color: #ece4e4;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: #222222;
+  color: #ece4e4;
+}
+header .container a {
+  text-decoration: none;
+  display: flex;
+}
+header .container a img {
+  width: 50px;
+  height: 50px;
+  margin: auto 15px;
+}
+header .container a h1 {
+  margin: auto;
+  color: #ece4e4;
+}
+header .container a h1 span {
+  color: #D01418;
+}
+header .container nav {
+  display: flex;
+  margin: auto 15px;
+}
+header .container nav ul {
+  display: flex;
+  list-style: none;
+}
+header .container nav ul a {
+  color: #ece4e4;
+  margin-right: 10px;
+}
+header .container nav .fa-shopping-cart {
+  font-size: 25px;
+  color: #D01418;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+.destacados h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 60px auto 40px auto;
+  color: #000000;
+}
+.destacados ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.destacados ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 320px;
+  background-color: #ffffff;
+}
+.destacados ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.destacados ul li a img {
+  width: 150px;
+  height: 190px;
+  margin-bottom: 10px;
+}
+.destacados ul li a hr {
+  border: 0.5px solil #000000;
+  border-width: 100%;
+  margin-top: 10px;
+}
+.destacados ul li a .precio {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.destacados ul li a .cuotas {
+  font-size: 13px;
+  font-weight: 400;
+}
+.destacados ul li a .envio {
+  font-size: 10px;
+  font-weight: 400;
+  color: #619D00;
+}
+
+.estrellas h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 60px auto 40px auto;
+  color: #000000;
+}
+.estrellas ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.estrellas ul li:nth-child(1) {
+  background-image: url(../img/banner-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 375px;
+  height: 150px;
+  position: relative;
+}
+.estrellas ul li:nth-child(1) a {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  text-decoration: none;
+  position: relative;
+}
+.estrellas ul li:nth-child(1) a p {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+}
+.estrellas ul li:nth-child(2) {
+  background-image: url(../img/banner-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 375px;
+  height: 150px;
+  position: relative;
+}
+.estrellas ul li:nth-child(2) a {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-decoration: none;
+  position: relative;
+}
+.estrellas ul li:nth-child(2) a p {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 220px;
+  background-color: #222222;
+}
+footer div {
+  margin: auto;
+}
+footer div a {
+  text-decoration: none;
+  display: flex;
+}
+footer div a img {
+  width: 50px;
+  height: 50px;
+  margin: auto 10px;
+}
+footer div a h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: auto;
+  color: #ece4e4;
+}
+footer div a h2 span {
+  color: #D01418;
+}
+footer div h3 {
+  color: #ece4e4;
+  font-size: 25px;
+  font-weight: 400;
+}
+footer div ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+footer div ul .fab {
+  font-size: 25px;
+}
+footer div ul .fa-twitter {
+  color: #14AED0;
+}
+footer div ul .fa-facebook {
+  color: #1476D0;
+}
+footer div ul .fa-instagram {
+  color: #CE0CFF;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

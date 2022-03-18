@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+}
+
+body {
+  background: #6D6027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D3CBB8, #6D6027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+}
+.container nav ul {
+  display: flex;
+  list-style: none;
+}
+.container nav ul li {
+  margin-right: 5px;
+}
+.container nav ul li a {
+  text-decoration: none;
+  color: #f0f8ff;
+}
+
+.hero {
+  width: 100%;
+  height: 60vh;
+  background-image: url(../img/lemon-pie.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  color: #272a2e;
+}
+.hero h1 {
+  font-size: 30px;
+  line-height: 38px;
+}
+.hero p {
+  text-align: justify;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+section {
+  width: 100%;
+  margin-top: 20px;
+}
+section h2 {
+  font-size: 25px;
+  line-height: 33px;
+  text-align: center;
+  color: #f0f8ff;
+}
+section ul {
+  text-align: center;
+}
+section ol {
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
